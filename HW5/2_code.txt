@@ -1,0 +1,136 @@
+>> L1 = (s/0.01+1)/(s^2+s+1);
+>> L2 = (s/0.1+1)/(s^2+s+1);
+>> L2 = (s/1+1)/(s^2+s+1);
+>> L3 = (s/1+1)/(s^2+s+1);
+>> L4 = (s/10+1)/(s^2+s+1);
+>> L5 = (s/100+1)/(s^2+s+1);
+
+a)
+>> hold on;
+>> step(L1);
+>> step(L2);
+>> step(L3);
+>> step(L4);
+>> step(L5);
+>> hold off;
+
+b)
+>> stepinfo(L1)
+
+ans = 
+
+  struct with fields:
+
+        RiseTime: 0.0084
+    SettlingTime: 9.2958
+     SettlingMin: -7.8126
+     SettlingMax: 55.0727
+       Overshoot: 5.4073e+03
+      Undershoot: 781.2564
+            Peak: 55.0727
+        PeakTime: 1.1973
+
+>> stepinfo(L2)
+
+ans = 
+
+  struct with fields:
+
+        RiseTime: 0.0836
+    SettlingTime: 9.3909
+     SettlingMin: 0.1942
+     SettlingMax: 5.9433
+       Overshoot: 494.3310
+      Undershoot: 0
+            Peak: 5.9433
+        PeakTime: 1.2894
+
+>> stepinfo(L3)
+
+ans = 
+
+  struct with fields:
+
+        RiseTime: 0.9409
+    SettlingTime: 7.5054
+     SettlingMin: 0.9403
+     SettlingMax: 1.2984
+       Overshoot: 29.8352
+      Undershoot: 0
+            Peak: 1.2984
+        PeakTime: 2.3947
+
+>> stepinfo(L4)
+
+ans = 
+
+  struct with fields:
+
+        RiseTime: 1.6275
+    SettlingTime: 7.9789
+     SettlingMin: 0.9016
+     SettlingMax: 1.1639
+       Overshoot: 16.3862
+      Undershoot: 0
+            Peak: 1.1639
+        PeakTime: 3.4999
+
+>> stepinfo(L5)
+
+ans = 
+
+  struct with fields:
+
+        RiseTime: 1.6384
+    SettlingTime: 8.0658
+     SettlingMin: 0.9010
+     SettlingMax: 1.1630
+       Overshoot: 16.2988
+      Undershoot: 0
+            Peak: 1.1630
+        PeakTime: 3.5920
+
+c)
+>> hold on;
+>> bode(L1);
+>> bode(L2);
+>> bode(L3);
+>> bode(L4);
+>> bode(L5);
+>> hold off;
+
+d)
+>> a = getPeakGain(L1);
+>> b = getPeakGain(L2);
+>> c = getPeakGain(L3);
+>> d = getPeakGain(L4);
+>> e = getPeakGain(L5);
+>> a
+
+a =
+
+  100.0050
+
+>> b
+
+b =
+
+   10.0499
+
+>> c
+
+c =
+
+    1.4676
+
+>> d
+
+d =
+
+    1.1495
+
+>> e
+
+e =
+
+    1.1547
