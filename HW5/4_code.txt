@@ -1,0 +1,47 @@
+>> R = 100000
+
+R =
+
+      100000
+
+>> C = 1/(s*2*10^-6)
+
+C =
+ 
+     1
+  -------
+  2e-06 s
+ 
+Continuous-time transfer function.
+
+>> Z1 = R+C
+
+Z1 =
+ 
+  0.2 s + 1
+  ---------
+   2e-06 s
+ 
+Continuous-time transfer function.
+
+>> Z2 = R+((R*C)/(R+C))
+
+Z2 =
+ 
+   0.04 s^2 + 0.4 s
+  -------------------
+  4e-07 s^2 + 2e-06 s
+ 
+Continuous-time transfer function.
+
+>> H = -Z2/Z1
+
+H =
+ 
+      -8e-08 s^3 - 8e-07 s^2
+  -------------------------------
+  8e-08 s^3 + 8e-07 s^2 + 2e-06 s
+ 
+Continuous-time transfer function.
+
+>> bode(H)
