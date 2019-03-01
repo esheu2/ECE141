@@ -1,0 +1,15 @@
+a) STILL NEED TO PLOT
+
+b) 3 times
+
+c) L(s) should achieve lower sensitivity at low frequencies for the closed loop system since it has higher gain at lower 
+frequencies compared to L2(s).
+
+d) 
+L1 Gm is -17.2 dB at 52.4 rad/s
+L1 Pm is 40.2 deg at 204 rad/s
+
+L2 Gm is 20 dB at 10^3 rad/s
+L2 Pm is 68.2 deg at 193 rad/s
+
+e) The upward gain margin for L(s) is 18.1 dB at 897 rad/s.
