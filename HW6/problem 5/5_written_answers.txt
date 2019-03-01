@@ -1,0 +1,7 @@
+a) STILL NEED TO PLOT
+
+b) 3 times
+
+c) L1 should achieve lower sensitivity at low frequencies for the closed loop system since it has higher gain at lower 
+frequencies compared to L2.
+
