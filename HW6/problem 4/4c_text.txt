@@ -1,0 +1,31 @@
+>> stepinfo(H)
+
+ans = 
+
+  struct with fields:
+
+        RiseTime: 1.6408
+    SettlingTime: 8.0781
+     SettlingMin: 0.9307
+     SettlingMax: 1.1626
+       Overshoot: 16.2647
+      Undershoot: 0
+            Peak: 1.1626
+        PeakTime: 3.5920
+
+>> [w,z] = damp(H)
+
+w =
+
+         0
+    0.9993
+    0.9993
+    1.0000
+
+
+z =
+
+   -1.0000
+    0.5003
+    0.5003
+    1.0000
