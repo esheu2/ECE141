@@ -13,3 +13,7 @@ L2 Gm is 20 dB at 10^3 rad/s
 L2 Pm is 68.2 deg at 193 rad/s
 
 e) The upward gain margin for L(s) is 18.1 dB at 897 rad/s.
+
+f) L(s)'s Nyquist diagram encircles the point -1 once while L2(s)'s Nyquist diagram does not encircle it at all.
+Since neither the open loop systems of L(s) nor L2(s) have unstable poles, this means that the closed loop 
+system of L((s) is not stable while the closed loop system of L2(s) is.
