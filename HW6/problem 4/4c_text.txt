@@ -4,28 +4,28 @@ ans =
 
   struct with fields:
 
-        RiseTime: 1.6408
-    SettlingTime: 8.0781
-     SettlingMin: 0.9307
-     SettlingMax: 1.1626
-       Overshoot: 16.2647
+        RiseTime: 1.3933
+    SettlingTime: 7.5106
+     SettlingMin: 0.9071
+     SettlingMax: 1.2052
+       Overshoot: 20.5180
       Undershoot: 0
-            Peak: 1.1626
-        PeakTime: 3.5920
+            Peak: 1.2052
+        PeakTime: 3.1315
 
 >> [w,z] = damp(H)
 
 w =
 
          0
-    0.9993
-    0.9993
     1.0000
+    1.1111
+    1.1111
 
 
 z =
 
    -1.0000
-    0.5003
-    0.5003
     1.0000
+    0.4500
+    0.4500
